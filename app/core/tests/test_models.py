@@ -4,6 +4,7 @@ Tests for models.
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 
+
 class ModelTests(TestCase):
     """Test models."""
 
@@ -36,7 +37,6 @@ class ModelTests(TestCase):
         """Test that creating a user without an email raises ValueError."""
         with self.assertRaises(ValueError):
             get_user_model().objects.create_user('', 'test123')
-
 
     def test_create_superuser(self):
         user = get_user_model().objects.create_superuser(
