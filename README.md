@@ -1,2 +1,2 @@
-# RecipeApp-API-Temp
+# RecipeApp-API
 Recipe App API project.
